@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/crimsontext/v13/wlpogwHKFkZgtmSR3NB0oRJfaghW.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/crimsontext/v13/wlprgwHKFkZgtmSR3NB0oRJfajCOD9NV.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/crimsontext/v13/wlprgwHKFkZgtmSR3NB0oRJfajDqDtNV.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/crimsontext/v13/wlp2gwHKFkZgtmSR3NB0oRJvaA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/crimsontext/v13/wlppgwHKFkZgtmSR3NB0oRJXsCx2Cw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/crimsontext/v13/wlppgwHKFkZgtmSR3NB0oRJX1C12Cw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Pathway Gothic One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pathwaygothicone/v9/MwQrbgD32-KAvjkYGNUUxAtW7pEBwx-dTA.ttf) format('truetype');
+}

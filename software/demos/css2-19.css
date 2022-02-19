@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Khand';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/khand/v9/TwMN-IINQlQQ0bL5cFE3.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Khand';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/khand/v9/TwMA-IINQlQQ0YpV.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Khand';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/khand/v9/TwMN-IINQlQQ0bKhcVE3.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Khand';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/khand/v9/TwMN-IINQlQQ0bKNdlE3.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Khand';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/khand/v9/TwMN-IINQlQQ0bLpd1E3.ttf) format('truetype');
+}

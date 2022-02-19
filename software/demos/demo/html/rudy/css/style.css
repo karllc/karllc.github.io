@@ -1,0 +1,319 @@
+@import 'bootstrap.min.css';
+html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+    background: #101010;
+}
+
+body {
+    font-family:Glacial Indifference; 
+    font-size: 17px;
+    line-height: 1.5em;
+    color: #fff;
+    height: 100%;
+    background: #101010;
+}
+
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px
+}
+
+::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: #101010
+}
+
+
+/* selection */
+
+::selection {
+    background-color: #101010;
+    color: #fff
+}
+
+-webkit-::selection {
+    background-color: #101010;
+    color: #fff
+}
+
+::-moz-selection {
+    background-color: #101010;
+    color: #fff
+}
+
+h3,
+.h3 {
+    font-family: Glacial Indifference;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+h3 a,
+.h3 a {
+    color: inherit
+}
+
+.h3 a:hover {
+    text-decoration: none
+}
+
+p {
+    margin-bottom: 20px;
+    font-family:Glacial Indifference; 
+}
+
+a {
+    color: #101010;
+    -webkit-transition: color .3s ease-out;
+    -o-transition: color .3s ease-out;
+    transition: color .3s ease-out
+}
+
+a:hover,
+a:focus {
+    color: #101010;
+    outline: none
+}
+
+a:focus {
+    text-decoration: none
+}
+
+.div-logo p {
+    font-family:Glacial Indifference; 
+    font-size: 17px;
+    line-height: 1.5em;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    margin: 0;
+}
+
+.logo {
+    width: 200px;
+    max-width: 200px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.btn {
+    font-family:Glacial Indifference; 
+    position: relative;
+    display: inline-block;
+    padding: 10px 24px;
+    font-size: 17px;
+    line-height: 1.5em;
+    color: #fff;
+    border: 2px solid #f21e4e;
+    background-color: #f21e4e;
+    border-radius: 0;
+    text-decoration: none;
+    -webkit-transition: all .3s ease-out!important;
+    transition: all .3s ease-out!important
+}
+
+.btn:hover,
+.btn:focus {
+    color: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none!important
+}
+
+.layout {
+    background: #101010 url("../img/bg.jpg") 50% 0 no-repeat;
+    background-size: cover;
+    min-height: 100%
+}
+
+.brand {
+    display: inline-block;
+    font-family:Glacial Indifference; 
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.5em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.brand span {
+    color: #f21e4e !important;
+}
+
+.brand:hover,
+.brand:focus {
+    color: #fff;
+    text-decoration: none
+}
+
+.text-primary {
+    color: #101010
+}
+
+.main {
+    padding-top: 80px;
+    text-align: center
+}
+
+.description {
+    margin-top: 3.6em
+}
+
+.rudy-version {
+    margin: 90px 0 30px 0;
+}
+
+.rudy-version h3 {
+    margin: 40px 15px;
+}
+
+.rudy-version figure {
+    position: relative
+}
+
+.rudy-version figure img {
+    display: block
+}
+
+.rudy-version figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s
+}
+
+.rudy-version figcaption .inner {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.rudy-version figure:hover figcaption {
+    opacity: 1
+}
+
+@media(min-width:768px) {
+    html {
+        font-size: 85%
+    }
+}
+
+@media(min-width:992px) {
+    html {
+        font-size: 92%
+    }
+}
+
+@media(min-width:1200px) {
+    html {
+        font-size: 100%
+    }
+}
+
+
+/* pricing */
+
+.pricing-info,
+.pulse {
+    font-family:Glacial Indifference; 
+    display: inline-block;
+    background: #f21e4e;
+    font-weight: 400;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 24px;
+    text-align: center;
+    z-index: 99;
+    border-radius: 90%;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s
+}
+
+.pricing-info:hover,
+.pricing-info:focus,
+.pricing-info:active,
+.pulse:hover,
+.pulse:focus,
+.pulse:active {
+    text-decoration: none;
+}
+
+.pricing-info a,
+.pulse a {
+    color: #fff;
+}
+
+.fiyat { color: #fff;}
+
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(.1);
+        transform: scale(.1);
+        opacity: 0
+    }
+    50% {
+        opacity: .3
+    }
+    100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(.1);
+        transform: scale(.1);
+        opacity: 0
+    }
+    50% {
+        opacity: .3
+    }
+    100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0
+    }
+}
+
+.pulse:nth-child(1) {
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse 2s infinite
+}
+
+.pulse:nth-child(2) {
+    -webkit-animation: pulse 2s infinite .3s;
+    animation: pulse 2s infinite .3s
+}
+
+.pulse:nth-child(3) {
+    -webkit-animation: pulse 2s infinite .6s;
+    animation: pulse 2s infinite .6s
+}

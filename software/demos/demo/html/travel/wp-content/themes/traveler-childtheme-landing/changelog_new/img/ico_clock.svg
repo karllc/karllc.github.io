@@ -1,0 +1,8 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="ico_clock">
+<path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M8 15C11.866 15 15 11.866 15 8C15 4.13401 11.866 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z" stroke="#A9B9C3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Oval_2" fill-rule="evenodd" clip-rule="evenodd" d="M8 9.58331C8.55228 9.58331 9 9.1356 9 8.58331C9 8.03103 8.55228 7.58331 8 7.58331C7.44772 7.58331 7 8.03103 7 8.58331C7 9.1356 7.44772 9.58331 8 9.58331Z" stroke="#A9B9C3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape" d="M8 7.58331V4.08331" stroke="#A9B9C3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_2" d="M8.70752 9.29065L10.5002 11.0833" stroke="#A9B9C3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

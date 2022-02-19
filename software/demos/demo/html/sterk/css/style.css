@@ -1,0 +1,301 @@
+/* -------------------
+    INTRO CSS 
+---------------------- */
+/* Google Fonts */
+@import url('../../../../css.css');
+@import 'bootstrap.min.css';
+
+/* General Style */
+html,
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.75em;
+    font-weight: 400;
+    color: #fff;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.75em;
+    font-weight: 400;
+    color: #fff;
+    height: 100%;
+    background: #ecddce;
+}
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.75em;
+    font-weight: 400;
+    color: #fff;
+}
+h3,
+.h3 {
+        font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    color: #777;
+    line-height: 1em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 0 30px 30px 0;
+    margin: 30px;
+}
+h3 a,
+.h3 a {
+    color: inherit
+}
+.h3 a:hover {
+    text-decoration: none
+}
+a {
+    color: #000;
+    -webkit-transition: color .3s ease-out;
+    -o-transition: color .3s ease-out;
+    transition: color .3s ease-out
+}
+a:hover,
+a:focus {
+    color: #dca167;
+    outline: none
+}
+a:focus {
+    text-decoration: none
+}
+
+/* Selection */
+::selection {
+    background-color: #000;
+    color: #fff
+}
+-webkit-::selection {
+    background-color: #000;
+    color: #fff
+}
+::-moz-selection {
+    background-color: #000;
+    color: #fff
+}
+
+/* Logo */
+.div-logo {
+    padding: 20px
+}
+.div-logo p {
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1em;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+.logo {
+    width: 140px;
+    max-width: 140px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.brand {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;
+    margin: 0;
+}
+.brand span {
+    color: #5d8b82;
+}
+
+/* Main */
+.main {
+    padding: 90px 0 60px 0;
+    text-align: center
+}
+/* Margin & Padding */
+.mt-60 {
+    margin-top: 60px;
+}
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+/* Demo Hover */
+.box {
+    -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+}
+.demo-hover figure {
+    position: relative
+}
+.demo-hover figure img {
+    display: block
+}
+.demo-hover figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(220, 161, 103, 0.8);
+    opacity: 0;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s
+}
+.demo-hover figcaption .inner {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+.demo-hover figure:hover figcaption {
+    opacity: 1
+}
+
+/* Button */
+.btn {
+    font-family: "Oswald", sans-serif;
+    position: relative;
+    display: inline-block;
+    padding: 9px 25px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    background: #5d8b82;
+    color: #fff;
+    border: 1px solid #5d8b82;
+    border-radius: 0px;
+    text-decoration: none;
+    -webkit-transition: all .3s ease-out!important;
+    transition: all .3s ease-out!important;
+    border-radius: 30px;
+}
+.btn:hover,
+.btn:focus {
+    background: #fff;
+    border: 1px solid #fff;
+    color: #777;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none!important
+}
+
+/* Pricing */
+.pricing-info,
+.pulse {
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
+    background: #5d8b82;
+    color: #fff;
+    font-weight: 400;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 24px;
+    text-align: center;
+    z-index: 99;
+    border-radius: 90%;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s
+}
+.pulse span{
+    font-family: 'Oswald', sans-serif;
+}
+.pricing-info:hover,
+.pricing-info:focus,
+.pricing-info:active,
+.pulse:hover,
+.pulse:focus,
+.pulse:active {
+    text-decoration: none;
+    color: #fff;
+}
+.pricing-info a,
+.pulse a {
+    color: #fff;
+}
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(.1);
+        transform: scale(.1);
+        opacity: 0
+    }
+    50% {
+        opacity: .3
+    }
+    100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0
+    }
+}
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(.1);
+        transform: scale(.1);
+        opacity: 0
+    }
+    50% {
+        opacity: .3
+    }
+    100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0
+    }
+}
+.pulse:nth-child(1) {
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse 2s infinite
+}
+.pulse:nth-child(2) {
+    -webkit-animation: pulse 2s infinite .3s;
+    animation: pulse 2s infinite .3s
+}
+.pulse:nth-child(3) {
+    -webkit-animation: pulse 2s infinite .6s;
+    animation: pulse 2s infinite .6s
+}
+
+
+/* Animate Box */
+.js .animate-box {
+    opacity: 0;
+}
+
+
+/* Footer  */
+.bottom {
+    padding: 60px 0;
+    text-align: center;
+}
+.bottom p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    line-height: 1.5em;
+    color: #777;
+    text-align: center;
+    font-weight: 400;
+    margin: 0;
+}

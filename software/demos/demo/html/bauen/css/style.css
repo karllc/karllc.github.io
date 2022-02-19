@@ -1,0 +1,409 @@
+@import 'bootstrap.min.css';
+@import url('../../../../css2-12.css');
+html {
+    height: 100%;
+}
+body {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+    color: rgba(255,255,255,0.8);
+    height: 100%;
+    background: #323232;
+}
+/* selection */
+::selection {
+    background-color: #b19777;
+    color: rgba(255,255,255,0.8)
+}
+-webkit-::selection {
+    background-color: #b19777;
+    color: rgba(255,255,255,0.8)
+}
+::-moz-selection {
+    background-color: #b19777;
+    color: rgba(255,255,255,0.8)
+}
+
+.container-fluid {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+h3,
+.h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: rgba(255,255,255,0.8);
+    margin-top: 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+h3 a,
+.h3 a {
+    color: inherit
+}
+.h3 a:hover {
+    text-decoration: none
+}
+p {
+    margin-bottom: 20px;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 400;
+    color: rgba(255,255,255,0.8);
+}
+a {
+    color: rgba(255,255,255,0.8);
+    -webkit-transition: color .3s ease-out;
+    -o-transition: color .3s ease-out;
+    transition: color .3s ease-out
+}
+a:hover,
+a:focus {
+    color: #b19777;
+    outline: none
+}
+a:focus {
+    text-decoration: none
+}
+.div-logo h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    position: relative;
+    color: #b19777;
+    letter-spacing: 9px;
+    margin-bottom: 45px;
+}
+.div-logo span {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    color: rgba(255,255,255,0.8);
+    font-weight: 300;
+    letter-spacing: 5.5px;
+    display: block;
+    margin-top: 5px;
+    line-height: 1.5em;
+    text-transform: uppercase;
+}
+.div-logo p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.js .animate-box {
+    opacity: 0;
+}
+.btn {
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    display: inline-block;
+    padding: 9px 22px;
+    line-height: 1.5em;
+    color: rgba(255,255,255,0.8);
+    background: transparent;
+    font-weight: 300;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    -webkit-transition: all .3s ease-out!important;
+    transition: all .3s ease-out!important;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+.btn:hover,
+.btn:focus {
+    color: rgba(255,255,255,0.8);
+    background: #272727;
+    border: 1px solid #272727;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none!important
+}
+.layout {
+    background: #000 url("../img/bg.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.main {
+    padding: 90px 0;
+    text-align: center
+}
+.description {
+    margin-top: 3.6em
+}
+.duru-version {
+    margin: 60px 0 0 0;
+}
+.duru-version h3 {
+    margin-bottom: 20px;
+	line-height: 1.5em;
+}
+.duru-version figure {
+    position: relative
+}
+.duru-version figure img {
+    display: block;
+    border: 7px solid rgba(255,255,255, 0.05);
+}
+
+.duru-version figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(177, 151, 119, 0.8);
+    opacity: 0;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s
+}
+.duru-version figcaption .inner {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+.duru-version figure:hover figcaption {
+    opacity: 1;
+}
+@media(min-width:768px) {
+    html {
+        font-size: 85%
+    }
+}
+@media(min-width:992px) {
+    html {
+        font-size: 92%
+    }
+}
+@media(min-width:1200px) {
+    html {
+        font-size: 100%
+    }
+}
+
+
+/* ======= Corner Style ======= */
+.hero-corner {
+    top: 50px;
+    right: 50px;
+    z-index: 21;
+    border-top: 1px solid;
+    border-right: 1px solid;
+}
+.hero-corner2 {
+    top: 50px;
+    left: 50px;
+    border-top: 1px solid;
+    border-left: 1px solid;
+}
+.hero-corner3 {
+    bottom: 50px;
+    right: 50px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+.hero-corner4 {
+    bottom: 50px;
+    left: 50px;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+}
+.hero-corner,
+.hero-corner2,
+.hero-corner3,
+.hero-corner4 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    z-index: 21;
+    border-color: rgba(177, 151, 119, 0.3);
+}
+@media screen and (max-width: 991px) {
+.hero-corner,
+    .hero-corner2,
+    .hero-corner3,
+    .hero-corner4 {
+        display: none;
+    }
+}
+
+
+/* bottom */
+
+.bottom {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.bottom h1 {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    font-size: 40px;
+    line-height: 1.5em;
+    color: #101010;
+    text-align: center;
+}
+
+.bottom p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    line-height: 1.5em;
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+
+/* Buy now */
+.duru-buy-now {
+		position: fixed;
+		right: 30px;
+		bottom: 30px;
+		z-index: 999;
+	}
+.duru-buy-now a {
+    text-decoration: none;
+}
+
+
+.duru-buy-now-btn {
+		display: inline-flex;
+		padding: 15px 30px;
+		align-items: center;
+		border: none;
+		border-radius: 50em;
+		background: #fff;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        font-family: 'Didact Gothic', sans-serif;
+		font-size: 12px;
+        font-weight: 400;
+		line-height: 1.5em;
+		color: #272727;
+		transition: all 0.3s;
+	}
+
+.duru-buy-now-btn:active,
+.duru-buy-now-btn:focus {
+    color: #272727;
+}
+
+
+.duru-buy-now-btn svg {
+		margin-right: 12px;
+	}
+.duru-buy-now-btn:hover {
+		background: rgba(177, 151, 119, 0.95);
+		color: #fff;
+		transform: translateY(-2px);
+	}
+.duru-buy-now-btn:hover svg {
+		fill: currentColor;
+	}
+
+
+/* New */
+.new-popular {
+    background-color: #ff0000;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    text-transform: uppercase;
+}
+.new-popular p {
+    padding-top: 17px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.25em;
+    margin-left: 1px;
+}
+
+
+/* Trendy Block */
+.trendy-block {
+    top: 50vh;
+    transform: translate(0, -50%);
+    left: 19px;
+    position: fixed;
+    z-index: 25;
+}
+.trendy-block p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    opacity: 1;
+    color: #b19777;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+}
+@media screen and (max-width: 768px){
+	.trendy-block  {
+        display: none;
+    }
+}
+
+/* Bestseller Block */
+.bestselling-block {
+    top: 50vh;
+    transform: translate(0, -50%);
+    right: 62px;
+    position: fixed;
+    z-index: 25;
+}
+.bestselling-block p {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: 20px;
+    opacity: 1;
+    color: #b19777;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+}
+@media screen and (max-width: 768px){
+	.bestselling-block  {
+        display: none;
+    }
+}

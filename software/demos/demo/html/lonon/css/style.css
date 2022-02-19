@@ -1,0 +1,265 @@
+/* ------------------------------------------
+	Style CSS
+------------------------------------------ */
+
+
+/* fonts */
+
+@import url('../../../../css-14.css');
+
+/* default */
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    line-height: 1.5em;
+    font-weight: 400;
+    color: #777;
+    height: 100%;
+    background: #f3f1f1;
+}
+
+a {
+    color: #101010;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    color: #101010;
+    text-decoration: underline;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    line-height: 1.5em;
+    font-weight: 400;
+    color: #777;
+}
+
+b,
+strong {
+    color: #101010;
+}
+
+
+.content {
+    padding: 90px 0 30px 0;
+    background: transparent;
+}
+
+.panel {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+
+/* header */
+
+.top {
+    padding: 60px 15px;
+    background: #fff;
+}
+
+.top h1 {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    font-size: 45px;
+    line-height: 1.5em;
+    color: #101010;
+    text-align: center;
+    margin: 0;
+}
+
+.top h3 {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #777;
+    text-align: center;
+    margin: 0 0 15px 0;
+    font-weight: 300;
+}
+
+.top p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #777;
+    text-align: center;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+/* bottom */
+
+.bottom {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.bottom p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    line-height: 1.5em;
+    color: #777;
+    text-align: center;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+/* button */
+
+.button {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding: 20px 15px;
+    float: right;
+    background: transparent;
+    color: #777;
+    font-weight: 300;
+    width: 100%;
+    outline: none;
+    text-align: center;
+    -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+
+/* Pricing */
+
+.pricing-info,
+.pulse {
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
+    background: #101010;
+    font-weight: 300;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 24px;
+    text-align: center;
+    z-index: 99;
+    border-radius: 90%;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s
+}
+
+.pricing-info:hover,
+.pricing-info:focus,
+.pricing-info:active,
+.pulse:hover,
+.pulse:focus,
+.pulse:active {
+    text-decoration: none;
+}
+
+.pricing-info a,
+.pulse a {
+    color: #fff;
+}
+
+.fiyat {
+    color: #fff;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(.1);
+        transform: scale(.1);
+        opacity: 0
+    }
+    50% {
+        opacity: .3
+    }
+    100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(.1);
+        transform: scale(.1);
+        opacity: 0
+    }
+    50% {
+        opacity: .3
+    }
+    100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0
+    }
+}
+
+.pulse:nth-child(1) {
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse 2s infinite
+}
+
+.pulse:nth-child(2) {
+    -webkit-animation: pulse 2s infinite .3s;
+    animation: pulse 2s infinite .3s
+}
+
+.pulse:nth-child(3) {
+    -webkit-animation: pulse 2s infinite .6s;
+    animation: pulse 2s infinite .6s
+}
+
+
+/* New */
+
+.new-popular {
+    background-color: #ff0000;
+    border-radius: 80px;
+    height: 55px;
+    width: 55px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 24px;
+    text-transform: uppercase;
+}
+
+.new-popular p {
+    padding-top: 17px;
+    color: #fff;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0px;
+}
+
+
+/* Animate Box */
+
+.js .animate-box {
+    opacity: 0;
+}

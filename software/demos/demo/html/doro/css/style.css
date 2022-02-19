@@ -1,0 +1,272 @@
+/* ------------------------------------------
+	Style CSS
+------------------------------------------ */
+
+
+/* fonts */
+
+@import url('../../../../css-16.css');
+
+/* default */
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    line-height: 1.5em;
+    font-weight: 400;
+    color: #777;
+    height: 100%;
+    background: #f3f1f1;
+}
+
+a {
+    color: #101010;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    color: #101010;
+    text-decoration: underline;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    line-height: 1.5em;
+    font-weight: 400;
+    color: #777;
+}
+
+b,
+strong {
+    color: #101010;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.5em;
+    color: #777;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+.content {
+    padding: 60px 0 30px 0;
+    background: transparent;
+}
+
+.panel {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+
+/* header */
+
+.top {
+    padding: 60px 15px;
+    background: #fff;
+    text-align: center;
+}
+
+.top h1 {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    font-size: 50px;
+    line-height: 1.5em;
+    color: #101010;
+    text-align: center;
+    margin: 0;
+}
+
+.top h3 {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #777;
+    text-align: center;
+    margin: 0 0 15px 0;
+    font-weight: 300;
+}
+
+.top p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #777;
+    text-align: center;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+.top .btn2 {
+    font-family: "Oswald", sans-serif;
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 9px 27px;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    color: #fff;
+    background-color: #101010;
+    border: 2px solid #101010;
+    border-radius: 50em;
+    text-decoration: none;
+    -webkit-transition: all .3s ease-out!important;
+    transition: all .3s ease-out!important
+}
+.top .btn2 a{
+    color: #fff;
+}
+.top .btn2:hover,
+.top .btn2:focus {
+    color: #fff;
+    background: #000;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none!important
+}
+
+
+
+/* bottom */
+
+.bottom {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.bottom h1 {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    font-size: 40px;
+    line-height: 1.5em;
+    color: #101010;
+    text-align: center;
+}
+
+.bottom p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    line-height: 1.5em;
+    color: #777;
+    text-align: center;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+/* button */
+
+.button {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+    padding: 25px 15px;
+    float: right;
+    background: #fff;
+    color: #777;
+    border: 1px solid #fff;
+    font-weight: 300;
+    width: 100%;
+    outline: none;
+    text-align: center;
+    -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.button:hover {
+    color: #fff;
+    background: #101010;
+    border: 1px solid #101010;
+    outline: none;
+}
+
+
+/* New */
+
+.new-popular {
+    background-color: #ff0000;
+    border-radius: 80px;
+    height: 50px;
+    width: 50px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 24px;
+    text-transform: uppercase;
+}
+
+.new-popular p {
+    padding-top: 16px;
+    color: #fff;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0px;
+}
+
+
+/* Animate Box */
+
+.js .animate-box {
+    opacity: 0;
+}
+
+
+
+/* Buy now */
+.duru-buy-now {
+		position: fixed;
+		right: 30px;
+		bottom: 30px;
+		z-index: 999;
+	}
+.duru-buy-now a {
+    text-decoration: none;
+}
+.duru-buy-now-btn {
+		display: inline-flex;
+		padding: 15px 30px;
+		align-items: center;
+		border: none;
+		border-radius: 50em;
+		background: #fff;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        font-family: 'Oswald', sans-serif;
+		font-size: 15px;
+		line-height: 1.5em;
+		color: #101010;
+		transition: all 0.3s;
+	}
+.duru-buy-now-btn svg {
+		margin-right: 12px;
+	}
+.duru-buy-now-btn:hover {
+		background: rgba(0, 0, 0, 0.8);
+		color: #fff;
+		transform: translateY(-2px);
+	}
+.duru-buy-now-btn:hover svg {
+		fill: currentColor;
+	}

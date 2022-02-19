@@ -1,0 +1,690 @@
+/* Bootstrap Menu Custom */
+
+.redboa-header-container {
+    position: relative;
+    text-align: center;
+}
+
+.redboa-burger-menu {
+    position: absolute;
+    top: 35px;
+    right: 14px;
+    width: 20px;
+    height: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    -webkit-transition: transform 330ms ease-out;
+    -moz-transition: transform 330ms ease-out;
+    -o-transition: transform 330ms ease-out;
+    transition: transform 330ms ease-out;
+}
+
+.redboa-burger-menu.redboa-menu-open {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.redboa-line-menu {
+    background-color: #000000;
+    border-radius: 2px;
+    width: 100%;
+    height: 2px;
+}
+
+.redboa-line-menu.redboa-line-half {
+    width: 50%;
+}
+
+.redboa-line-menu.redboa-first-line {
+    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: right;
+}
+
+.redboa-menu-open .redboa-line-menu.redboa-first-line {
+    -webkit-transform: rotate(-90deg) translateX(3px);
+    -moz-transform: rotate(-90deg) translateX(3px);
+    -o-transform: rotate(-90deg) translateX(3px);
+    transform: rotate(-90deg) translateX(3px);
+}
+
+.redboa-line-menu.redboa-last-line {
+    align-self: flex-end;
+    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: left;
+}
+
+.redboa-menu-open .redboa-line-menu.redboa-last-line {
+    -webkit-transform: rotate(-90deg) translateX(-3px);
+    -moz-transform: rotate(-90deg) translateX(-3px);
+    -o-transform: rotate(-90deg) translateX(-3px);
+    transform: rotate(-90deg) translateX(-3px);
+}
+
+
+/* Menu overlay */
+
+.redboa-header-overlay .redboa-burger-menu,
+.redboa-fixed-sidebar + .redboa-burger-menu {
+    display: block;
+    position: fixed;
+    flex-direction: inherit;
+    justify-content: inherit;
+    width: 50px;
+    height: 47px;
+    top: 30px;
+    right: 15px;
+    background: #000000;
+    padding: 15px;
+    z-index: 99999;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.redboa-header-overlay .redboa-burger-menu:hover {
+    -webkit-box-shadow: 0px 0px 25px -1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 25px -1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 25px -1px rgba(0, 0, 0, 0.4);
+}
+
+.redboa-header-overlay .redboa-burger-menu > span,
+.redboa-fixed-sidebar + .redboa-burger-menu > span {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 17px;
+    -webkit-transition: transform 330ms ease-out;
+    -moz-transition: transform 330ms ease-out;
+    -o-transition: transform 330ms ease-out;
+    transition: transform 330ms ease-out;
+}
+
+.redboa-header-overlay .redboa-line-menu,
+.redboa-fixed-sidebar + .redboa-burger-menu .redboa-line-menu {
+    background-color: #fff;
+}
+
+.redboa-header-overlay .redboa-burger-menu.redboa-menu-open,
+.redboa-fixed-sidebar + .redboa-burger-menu.redboa-menu-open {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+}
+
+.redboa-header-overlay .redboa-menu-open > span,
+.redboa-fixed-sidebar + .redboa-menu-open > span {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.redboa-fixed-sidebar .redboa-menu-social-media .social a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: transparent;
+    border-radius: 50%;
+    color: #991b1f;
+    font-size: 16px;
+    margin: 0 2px 0 0;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.redboa-fixed-sidebar .redboa-menu-social-media .social a:hover {
+    color: #fff;
+}
+
+.redboa-fixed-sidebar .redboa-menu-social-media .social a::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    background-color: #991b1f;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    -o-transform: scale(0.3);
+    transform: scale(0.3);
+    transition: 0.4s;
+}
+
+.redboa-fixed-sidebar .redboa-menu-social-media .social a:hover::before {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.redboa-fixed-sidebar .redboa-menu-social-media .social a i {
+    position: relative;
+}
+
+.redboa-menu-copyright {
+    text-align: center;
+}
+
+.redboa-menu-copyright p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.redboa-menu-copyright p a {
+    color: #991b1f;
+}
+
+@-webkit-keyframes menuFadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(40px, 0, 0);
+        transform: translate3d(40px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes menuFadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(40px, 0, 0);
+        transform: translate3d(40px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+
+/* Fixed sidebar menu */
+
+.body-fixed-sidebar {
+    overflow-x: hidden;
+}
+
+.redboa-fixed-sidebar {
+    position: fixed;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    z-index: 9999999;
+    overflow-y: auto;
+    background-color: #000;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.redboa-sidebar-left {
+    left: 0;
+    -webkit-box-shadow: 2px 0px 12px -2px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 2px 0px 12px -2px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 2px 0px 12px -2px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 0px 12px -2px rgba(0, 0, 0, 0.15);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+    scrollbar-width: none;
+}
+
+.redboa-sidebar-left.redboa-fixed-sidebar-open {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
+.redboa-fixed-sidebar .redboa-header-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 0 30px;
+}
+
+.redboa-fixed-sidebar + .redboa-burger-menu {
+    z-index: 9999999;
+}
+
+.redboa-sidebar-left + .redboa-burger-menu {
+    top: 0;
+    right: inherit;
+    left: 0;
+}
+
+.redboa-fixedsidebar-bg-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.redboa-side-content {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.redboa-sidebar-left.redboa-fixed-sidebar-open ~ .redboa-side-content {
+    -webkit-transform: translateX(125px);
+    -moz-transform: translateX(125px);
+    -o-transform: translateX(125px);
+    transform: translateX(125px);
+}
+
+.redboa-fixed-sidebar .logo {
+    display: none;
+    text-align: center;
+    padding: 60px 0 90px 0;
+}
+
+.redboa-side-content > .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 47px;
+    padding: 0 50px;
+    z-index: 99999;
+    text-align: center;
+    background-color: #000000;
+    -webkit-box-shadow: 0px 2px 12px -2px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 2px 12px -2px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 2px 12px -2px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 2px 12px -2px rgba(0, 0, 0, 0.15);
+}
+
+.redboa-side-content > .logo img {
+    max-width: inherit;
+    max-height: 30px;
+    width: auto;
+}
+
+.redboa-fixed-sidebar .logo h1 {
+    font-weight: 400;
+    font-size: 49px;
+    line-height: 1.5em;
+    color: #991b1f;
+}
+
+.redboa-fixed-sidebar .logo a span {
+    display: block;
+    margin-top: 0px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Rambla', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    line-height: 0.5em;
+    letter-spacing: 2px;
+}
+
+.redboa-footer-logo {
+    padding: 0 0 30px 0;
+}
+
+.redboa-footer-logo img {
+    max-width: inherit;
+    max-height: 50px;
+    width: auto;
+}
+
+.redboa-fixed-sidebar-open ~ .redboa-fixedsidebar-bg-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.redboa-fixed-menu-wrap {
+    width: 100%;
+}
+
+.redboa-footer-sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.redboa-footer-sidebar p {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.redboa-footer-sidebar span {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 4px;
+}
+
+.redboa-footer-sidebar h6 {
+    color: #991b1f;
+    font-size: 28px;
+}
+
+/* Navigation menu */
+
+.redboa-menu-fixed {
+    padding-top: 90px;
+    text-align: left;
+}
+
+.redboa-menu-fixed ul li {
+    position: relative;
+}
+
+.redboa-menu-fixed ul li a {
+    font-family: 'Pirata One', cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: block;
+    padding-right: 17px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.redboa-menu-fixed ul li a b {
+     color: #991b1f !important;
+}
+
+.redboa-menu-fixed > ul > li.current-menu > a,
+.redboa-menu-fixed ul li:hover > a {
+    color: #991b1f !important;
+}
+
+.redboa-menu-fixed > ul {
+    margin-bottom: 40px;
+}
+
+.redboa-menu-fixed > ul > li {
+    margin: 5px 0;
+    padding: 0 0 5px 0;
+}
+
+.redboa-menu-fixed > ul > li:last-child {
+    margin-bottom: 0;
+}
+
+.redboa-menu-fixed > ul > li > a {
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.redboa-menu-fixed > ul ul {
+    display: none;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.redboa-menu-fixed > ul ul.submenu-collapse {
+    opacity: 1;
+}
+
+.redboa-menu-fixed > ul ul li {
+    margin-bottom: 6px;
+}
+
+.redboa-menu-fixed > ul ul li:last-child {
+    margin-bottom: 0;
+}
+
+.redboa-menu-fixed > ul ul a {
+    position: relative;
+    padding-left: 18px;
+    font-size: 15px;
+    font-style: italic;
+    color: #818181;
+}
+
+.redboa-menu-fixed > ul ul a::before {
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: 4px;
+    width: 1px;
+    height: 12px;
+    background-color: #d1d1d1;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.redboa-menu-fixed > ul ul a:hover {
+    padding-left: 24px;
+}
+
+.redboa-menu-fixed > ul > li > ul {
+    padding: 27px 0 15px;
+}
+
+.redboa-menu-fixed > ul > li > ul ul {
+    padding-top: 6px;
+}
+
+.redboa-menu-fixed > ul > li > ul > li ul {
+    padding-left: 18px;
+}
+
+.redboa-menu-fixed .overlay-dropdown-plus {
+    top: -1px;
+    right: -7px;
+    opacity: 1;
+}
+
+.redboa-menu-fixed > ul ul .overlay-dropdown-plus {
+    top: -3px;
+}
+
+.redboa-menu-fixed.submenu-no-separate > ul ul a::before {
+    display: none !important;
+}
+
+.redboa-menu-fixed.submenu-no-separate > ul ul a,
+.redboa-menu-fixed.submenu-no-separate > ul > li > ul > li ul {
+    padding-left: 12px;
+}
+
+.redboa-menu-fixed.submenu-no-separate > ul ul a:hover {
+    padding-left: 18px;
+}
+
+
+/* Menu icons */
+
+.redboa-menu-fixed .redboa-menu-icon {
+    margin-right: 5px;
+}
+
+
+/* Media queries for responsive design */
+
+@media (min-width: 768px) {
+    .redboa-header .logo {
+        float: left;
+        padding: 30px 40px 30px 0;
+    }
+
+    .redboa-menu {
+        clear: both;
+    }
+
+    .redboa-header-shadow-wrapper:after {
+        -webkit-box-shadow: 0px 10px 40px -5px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 10px 40px -5px rgba(0, 0, 0, 0.1);
+        -o-box-shadow: 0px 10px 40px -5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 10px 40px -5px rgba(0, 0, 0, 0.1);
+    }
+
+    .redboa-header-overlay .logo {
+        left: 30px;
+    }
+
+    .redboa-header-overlay .redboa-burger-menu {
+        right: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    /* Viewport Breakpoint */
+    .redboa-header-container {
+        height: 90px;
+    }
+
+    .redboa-header-overlay .redboa-header-container {
+        height: auto;
+    }
+
+    .redboa-header .logo {
+        position: relative;
+        padding: 0;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .redboa-header .logo img {
+        max-width: inherit;
+        max-height: 50px;
+        width: auto;
+    }
+
+    .redboa-burger-menu {
+        display: none;
+    }
+
+    /* Header sticky */
+    .redboa-header.sticky {
+        position: fixed;
+        width: 100%;
+        -webkit-animation-duration: .5s;
+        animation-duration: .5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-name: stickyTransition;
+        animation-name: stickyTransition;
+    }
+
+    .redboa-header.sticky .redboa-header-container {
+        height: 70px;
+    }
+
+    /* Center menu */
+    .redboa-header.center-menu-1 .redboa-header-container > .logo {
+        display: none;
+    }
+
+    .redboa-header.center-menu-2 .redboa-header-container {
+        height: auto;
+    }
+
+    /* Menu overlay */
+    .redboa-header-overlay .redboa-burger-menu {
+        top: 40px;
+        right: 40px;
+    }
+
+    /* Fixed sidebar menu */
+    .redboa-fixed-sidebar {
+        -webkit-transition-duration: 0s;
+        -moz-transition-duration: 0s;
+        -o-transition-duration: 0s;
+        transition-duration: 0s;
+    }
+
+    .redboa-side-content > .logo,
+    .redboa-fixed-sidebar + .redboa-burger-menu,
+    .redboa-fixedsidebar-bg-overlay {
+        display: none;
+    }
+
+    .redboa-fixed-sidebar .logo {
+        display: block;
+    }
+
+    .redboa-fixed-sidebar .logo img {
+        max-width: inherit;
+        max-height: 50px;
+        width: auto;
+    }
+
+    .redboa-side-content {
+        width: calc(100% - 250px);
+        -webkit-transition-duration: 0s;
+        -moz-transition-duration: 0s;
+        -o-transition-duration: 0s;
+        transition-duration: 0s;
+        -webkit-transform: translateX(0%) !important;
+        -moz-transform: translateX(0%) !important;
+        -o-transform: translateX(0%) !important;
+        transform: translateX(0%) !important;
+    }
+
+    .redboa-sidebar-left ~ .redboa-fixedsidebar-bg-overlay + .redboa-side-content {
+        margin-left: auto;
+    }
+
+    .redboa-sidebar-left,
+    .redboa-sidebar-right {
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -o-transform: translateX(0%);
+        transform: translateX(0%);
+        z-index: auto;
+    }
+
+    .redboa-menu-fixed {
+        padding-top: 0;
+    }
+}

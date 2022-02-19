@@ -1,0 +1,2 @@
+jQuery(document).ready(function($){});$(document).ready(function(){var stickyNavTop=20;var stickyNav=function(){var scrollTop=$(window).scrollTop();if(scrollTop>=stickyNavTop||scrollTop<=26){$('#main-menu').removeClass('sticky');$('.header').css({'padding-top':'20px'});}else{$('#main-menu').addClass('sticky');$('.header').css({'padding-top':'80px'});}
+stickyNavTop=scrollTop;};stickyNav();$(window).scroll(function(){stickyNav();});});

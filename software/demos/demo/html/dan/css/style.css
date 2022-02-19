@@ -1,0 +1,288 @@
+@import 'bootstrap.min.css';
+@import url('../../../../css2-22.css');
+
+html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+    background: #000;
+}
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #999;
+    height: 100%;
+    background: #000;
+}
+
+
+
+/* selection */
+
+::selection {
+    background-color: #101010;
+    color: #fff
+}
+
+-webkit-::selection {
+    background-color: #101010;
+    color: #fff
+}
+
+::-moz-selection {
+    background-color: #101010;
+    color: #fff
+}
+
+h3,
+.h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 4px;
+    word-spacing: 1px;
+    text-transform: uppercase;
+    color: #999;
+    margin-top: 30px;
+}
+
+h3 a,
+.h3 a {
+    color: inherit
+}
+
+.h3 a:hover {
+    text-decoration: none
+}
+
+p {
+    margin-bottom: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+a {
+    color: #fff;
+    -webkit-transition: color .3s ease-out;
+    -o-transition: color .3s ease-out;
+    transition: color .3s ease-out
+}
+
+a:hover,
+a:focus {
+    color: #fff;
+    outline: none
+}
+
+a:focus {
+    text-decoration: none
+}
+
+.div-logo p {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #999;
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    max-width: 200px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.div-logo .btn {
+    background:#f96f00;
+    border: 1px solid #f96f00;
+    
+}
+
+.div-logo .btn a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.div-logo .btn:hover {
+    background: transparent;
+    border: 1px solid #f96f00;
+}
+
+.js .animate-box {
+    opacity: 0;
+}
+
+.btn {
+    font-family: 'Barlow Condensed', sans-serif;
+    position: relative;
+    display: inline-block;
+    padding: 7px 20px 7px 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    color: #f96f00;
+    border: 1px solid #f96f00;
+    border-radius: 0;
+    text-decoration: none;
+    -webkit-transition: all .3s ease-out!important;
+    transition: all .3s ease-out!important;
+    font-size: 16px;
+}
+
+.btn:hover,
+.btn:focus {
+    color: #fff;
+    border: 1px solid #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none!important
+}
+
+
+.layout {
+    background: #191919 url("../img/bg.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.brand {
+    display: inline-block;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1;
+    color: #fff
+}
+
+.brand:hover,
+.brand:focus {
+    color: #fff;
+    text-decoration: none
+}
+
+.text-primary {
+    color: #101010
+}
+
+.main {
+    padding: 90px 0;
+    text-align: center
+}
+
+.description {
+    margin-top: 3.6em
+}
+
+.annie-version {
+    margin: 60px 0 0 0;
+}
+
+.annie-version h3 {
+    margin-bottom: 20px
+}
+
+.annie-version figure {
+    position: relative
+}
+
+.annie-version figure img {
+    display: block
+}
+
+.annie-version figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s
+}
+
+.annie-version figcaption .inner {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.annie-version figure:hover figcaption {
+    opacity: 1
+}
+
+@media(min-width:768px) {
+    html {
+        font-size: 85%
+    }
+}
+
+@media(min-width:992px) {
+    html {
+        font-size: 92%
+    }
+}
+
+@media(min-width:1200px) {
+    html {
+        font-size: 100%
+    }
+}
+
+
+/* Buy now */
+.duru-buy-now {
+		position: fixed;
+		right: 30px;
+		bottom: 30px;
+		z-index: 999;
+	}
+.duru-buy-now a {
+    text-decoration: none;
+}
+.duru-buy-now-btn {
+		display: inline-flex;
+		padding: 15px 30px;
+		align-items: center;
+		border: none;
+		border-radius: 50em;
+		background: #fff;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        font-family: 'Barlow Condensed', sans-serif;
+		font-size: 16px;
+        word-spacing: 1px;
+		line-height: 1.5em;
+		color: #101010;
+		transition: all 0.3s;
+	}
+
+.duru-buy-now-btn:active,
+.duru-buy-now-btn:focus {
+    color: #101010;
+}
+
+
+.duru-buy-now-btn svg {
+		margin-right: 12px;
+	}
+.duru-buy-now-btn:hover {
+		background: #f96f00;
+		color: #fff;
+		transform: translateY(-2px);
+	}
+
+.duru-buy-now-btn:hover svg {
+		fill: currentColor;
+	}

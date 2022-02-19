@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Pirata One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pirataone/v15/I_urMpiDvgLdLh0fAtofhi-Oqw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rambla';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rambla/v8/snfrs0ip98hx6mrEJLgK.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rambla';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rambla/v8/snfos0ip98hx6mrMn50aOfl8.ttf) format('truetype');
+}

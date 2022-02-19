@@ -1,0 +1,238 @@
+/* ------------------------------------------
+	Style CSS
+------------------------------------------ */
+
+
+/* fonts */
+
+@import url('../../../../css2-17.css');
+@font-face{font-family:Paris Script;src:url('../fonts/parisscript-regular.woff');}
+
+/* default */
+
+body {
+    color: #000;
+    line-height: 1.75;
+    font-size: 14px;
+    font-family: 'Old Standard TT', serif;
+    font-weight: 400;
+    height: 100%;
+    background: #f1eaea;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+p {
+    margin: 0 0 15px;
+    color: #000;
+    line-height: 1.75;
+    font-size: 14px;
+    font-family: 'Old Standard TT', serif;
+    font-weight: 400;
+}
+
+b,
+strong {
+    color: #000;
+}
+
+
+.content {
+    padding: 90px 0 30px 0;
+    background: transparent;
+}
+
+.panel {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+
+/* header */
+
+.top {
+    padding: 60px 15px;
+    background: #fff;
+}
+
+.top h1 {
+    font-size: 32px;
+    line-height: 1em;
+    color: #000;
+    text-align: center;
+    margin: 0 0 25px 0;
+    font-family: 'Paris Script';
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.top h1 span {
+    display: block;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    font-size: 9px;
+    font-family: 'Old Standard TT', serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.top h3 {
+    font-family: 'Old Standard TT', serif;
+    letter-spacing: 3px;
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #000;
+    text-align: center;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+}
+
+.top p {
+    font-family: 'Old Standard TT', serif;
+    font-size: 18px;
+    line-height: 1.2em;
+    color: #000;
+    text-align: center;
+    font-weight: 400;
+    margin: 5px 0 0 0;
+}
+
+
+/* bottom */
+
+.bottom {
+    padding: 0 0 90px 0;
+    text-align: center;
+}
+
+.bottom h1 {
+    font-family: 'Old Standard TT', serif;
+    letter-spacing: 3px;
+    font-size: 40px;
+    line-height: 1.5em;
+    color: #000;
+    text-align: center;
+}
+
+.bottom p {
+    font-family: 'Old Standard TT', serif;
+    font-size: 13px;
+    line-height: 1.5em;
+    color: #000;
+    text-align: center;
+    font-weight: 400;
+    margin: 0;
+}
+
+
+/* button */
+.button {
+    font-family: 'Old Standard TT', serif;
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding: 30px 15px;
+    float: right;
+    background: #fff;
+    color: #000;
+    border: 1px solid #fff;
+    font-weight: 400;
+    width: 100%;
+    outline: none;
+    text-align: center;
+    -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+.button:hover {
+    color: #fff;
+    background: #dd888d;
+    border: 1px solid #dd888d;
+    outline: none;
+}
+
+
+
+/* New */
+.new-popular {
+    background-color: #ff0000;
+    border-radius: 80px;
+    height: 55px;
+    width: 55px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 24px;
+    text-transform: uppercase;
+}
+.new-popular p {
+    padding-top: 17px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0px;
+}
+
+/* Animate Box */
+.js .animate-box {
+    opacity: 0;
+}
+
+/* ======= Buy now ======= */
+.duru-buy-now {
+		position: fixed;
+		right: 30px;
+		bottom: 30px;
+		z-index: 999;
+	}
+.duru-buy-now a {
+    text-decoration: none;
+}
+.duru-buy-now-btn,
+.duru-buy-now-btn:active,
+.duru-buy-now-btn:focus {
+		display: inline-flex;
+		padding: 15px 30px;
+		align-items: center;
+		border: none;
+		border-radius: 50em;
+		background: #fff;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+		font-size: 14px;
+		line-height: 1.5em;
+		color: #101010;
+		transition: all 0.3s;
+	}
+.duru-buy-now-btn svg {
+		margin-right: 12px;
+	}
+.duru-buy-now-btn:hover {
+		background: #dd888d;
+		color: #fff;
+		transform: translateY(-2px);
+	}
+.duru-buy-now-btn:hover svg {
+		fill: currentColor;
+	}

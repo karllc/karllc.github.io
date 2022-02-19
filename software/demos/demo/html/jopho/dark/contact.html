@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>JOPHO</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/style.css"> 
+    <script>document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+</head>
+
+<body>
+    <!-- Loading -->
+    <div class="loading">
+        <div class="text-center middle">
+            <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <!-- Logo -->
+        <div class="logo-wrapper valign">
+            <div class="logo">
+                <h2><a href="index.html">Jopho</a><span>Photo Studio</span></h2> </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="icon-bar"><i class="ti-line-double"></i></span> </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item dropdown"> <span class="nav-link"> Blog <i class="ti-angle-down"></i></span>
+                    <ul class="dropdown-menu last">
+                        <li class="dropdown-item"><a href="blog.html">Blog Page</a></li>
+                        <li class="dropdown-item"><a href="post.html">Post Page</a></li>
+                        <li class="dropdown-item"><a href="services-page.html">Services Page</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Header -->
+    <header class="banner-header banner-img valign bg-img" data-overlay-dark="3" data-background="img/banner/05.jpg" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 offset-md-5 text-right caption mt-60 animate-box" data-animate-effect="fadeInUp">
+                    <h5>Location</h5>
+                    <h1>Contact</h1> </div>
+            </div>
+        </div>
+    </header>
+    <!-- Contact -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row mb-90">
+                <div class="col-md-6 mb-30 animate-box" data-animate-effect="fadeInUp">
+                    <h6>Contact Info</h6>
+                    <p>Qualamy nisl sodales sit amet sapien id, placerat sodales orciter.
+                        <br>Vivamus nec magna rhoncus felis, faucibus printy.</p>
+                    <p><b>Phone :</b> +1 (123) 444-5555</p>
+                    <p><b>Email :</b> photography@jopho.com</p>
+                    <p><b>Address :</b> 1040 Bayhill Dr, San Bruno, CA 94066, US.</p>
+                </div>
+                <div class="col-md-6 animate-box" data-animate-effect="fadeInUp">
+                    <h6>Contact Form</h6>
+                    <p>Interested to work wiht us?</p>
+                    <form method="post" class="row">
+                        <div class="col-md-6">
+                            <input type="text" name="name" id="name" placeholder="Full Name"> </div>
+                        <div class="col-md-6">
+                            <input type="email" name="email" id="email" placeholder="Email" required=""> </div>
+                        <div class="col-md-12">
+                            <textarea name="message" id="message" cols="40" rows="4" placeholder="Message"></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <button class="butn-dark mt-10" type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Map Section-->
+            <div class="row">
+                <div class="col-md-12 mb-30 animate-box" data-animate-effect="fadeInUp">
+                    <div id="jophoto-contactMap"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-text-left">
+                    <div class="social"> 
+                        <a href="#"><i class="ti-twitter-alt"></i></a> 
+                        <a href="#"><i class="ti-facebook"></i></a> 
+                        <a href="#"><i class="ti-instagram"></i></a> 
+                        <a href="#"><i class="ti-linkedin"></i></a> 
+                    </div>
+                </div>
+                <div class="col-md-4 footer-text-center">
+                    <div class="logo">
+                        <h1><a href="index.html">JOPHO<span>PHOTO STUDIO</span></a></h1>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-text-right">
+                    <p>&copy;2022 JOPHO. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="../../../../maps/api/js-3?key=AIzaSyCe2q1gFSd75jKUnTDPq0nZWaMlEu6vL30"></script>
+    <script src="js/map.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

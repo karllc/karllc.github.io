@@ -1,0 +1,345 @@
+@import 'bootstrap.min.css';
+@import url('../../../../css2-16.css');
+html {
+    height: 100%;
+}
+body {
+    font-family: 'Pirata One', cursive;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #fff;
+    height: 100%;
+    background: #000;
+}
+/* selection */
+::selection {
+    background-color: #991b1f;
+    color: rgba(255,255,255,0.8)
+}
+-webkit-::selection {
+    background-color: #991b1f;
+    color: rgba(255,255,255,0.8)
+}
+::-moz-selection {
+    background-color: #991b1f;
+    color: rgba(255,255,255,0.8)
+}
+.container-fluid {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+h3,
+.h3 {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+h3 a,
+.h3 a {
+    color: inherit
+}
+.h3 a:hover {
+    text-decoration: none
+}
+p {
+    margin-bottom: 20px;
+    font-family: 'Pirata One', cursive;
+    font-weight: 400;
+    color: rgba(255,255,255,0.8);
+}
+a {
+    color: rgba(255,255,255,0.8);
+    -webkit-transition: color .3s ease-out;
+    -o-transition: color .3s ease-out;
+    transition: color .3s ease-out
+}
+a:hover,
+a:focus {
+    color: #991b1f;
+    outline: none
+}
+a:focus {
+    text-decoration: none
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-60 {
+    margin-top: 60px;
+}
+.div-logo .logo {
+    margin: auto;
+    padding: 0;
+    width: 160px;
+}
+.div-logo h2 {
+    font-weight: 400;
+    font-size: 75px;
+    color: #fff;
+    line-height: 0.8em;
+    letter-spacing: 4px;
+    text-decoration: none;
+}
+.div-logo span {
+    font-family: 'Mukta', sans-serif;
+    display: block;
+    margin-top: 7px;
+    font-size: 9px;
+    letter-spacing: 4px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    background: #991b1f;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+}
+.div-logo p {
+    font-family: 'Pirata One', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 1.3em;
+}
+.js .animate-box {
+    opacity: 0;
+}
+.btn {
+    font-family: 'Mukta', sans-serif;
+    position: relative;
+    display: inline-block;
+    padding: 11px 22px 9px 22px;
+    line-height: 1.5em;
+    color: rgba(255,255,255,0.8);
+    background: transparent;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    -webkit-transition: all .3s ease-out!important;
+    transition: all .3s ease-out!important;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+.btn:hover,
+.btn:focus {
+    color: #101010;
+    background: #fff;
+    border: 1px solid #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none!important
+}
+.layout {
+    background: #000 url("../img/bg.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.main {
+    padding: 90px 0;
+    text-align: center
+}
+.description {
+    margin-top: 3.6em
+}
+.duru-version {
+    margin: 60px 0 0 0;
+}
+.duru-version h3 {
+    margin-bottom: 20px
+}
+.duru-version figure {
+    position: relative
+}
+.duru-version figure img {
+    display: block;
+    border: 7px solid rgba(255,255,255, 0.05);
+}
+.duru-version figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(153, 27, 31, 0.7);
+    opacity: 0;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s
+}
+.duru-version figcaption .inner {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+.duru-version figure:hover figcaption {
+    opacity: 1;
+}
+@media(min-width:768px) {
+    html {
+        font-size: 85%
+    }
+}
+@media(min-width:992px) {
+    html {
+        font-size: 92%
+    }
+}
+@media(min-width:1200px) {
+    html {
+        font-size: 100%
+    }
+}
+
+
+/* ======= Corner Style ======= */
+.hero-corner {
+    top: 50px;
+    right: 50px;
+    z-index: 21;
+    border-top: 1px solid;
+    border-right: 1px solid;
+}
+.hero-corner2 {
+    top: 50px;
+    left: 50px;
+    border-top: 1px solid;
+    border-left: 1px solid;
+}
+.hero-corner3 {
+    bottom: 50px;
+    right: 50px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+.hero-corner4 {
+    bottom: 50px;
+    left: 50px;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+}
+.hero-corner,
+.hero-corner2,
+.hero-corner3,
+.hero-corner4 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    z-index: 21;
+    border-color: rgba(153, 27, 31, 0.5);
+}
+@media screen and (max-width: 991px) {
+.hero-corner,
+    .hero-corner2,
+    .hero-corner3,
+    .hero-corner4 {
+        display: none;
+    }
+}
+
+
+/* bottom */
+.bottom {
+    padding: 40px 0;
+    text-align: center;
+}
+.bottom h1 {
+    font-family: 'Mukta', sans-serif;
+    letter-spacing: 3px;
+    font-size: 40px;
+    line-height: 1.5em;
+    color: #101010;
+    text-align: center;
+}
+.bottom p {
+    font-family: 'Mukta', sans-serif;
+    font-size: 12px;
+    line-height: 1.5em;
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+
+/* Buy now */
+.duru-buy-now {
+		position: fixed;
+		right: 30px;
+		bottom: 30px;
+		z-index: 999;
+	}
+.duru-buy-now a {
+    text-decoration: none;
+}
+.duru-buy-now-btn {
+		display: inline-flex;
+		padding: 15px 30px;
+		align-items: center;
+		border: none;
+		border-radius: 50em;
+		background: #fff;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        font-family: 'Mukta', sans-serif;
+		font-size: 15px;
+		line-height: 1.5em;
+		color: #272727;
+		font-weight: 300;
+		transition: all 0.3s;
+	}
+.duru-buy-now-btn svg {
+		margin-right: 12px;
+	}
+.duru-buy-now-btn:hover {
+		background: rgba(153, 27, 31, 0.8);
+		color: #fff;
+		transform: translateY(-2px);
+	}
+.duru-buy-now-btn:hover svg {
+		fill: currentColor;
+	}
+
+
+/* New */
+.new-popular {
+    background-color: #ff0000;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    text-transform: uppercase;
+}
+
+.new-popular p {
+    font-family: 'Mukta', sans-serif;
+    padding-top: 17px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.25em;
+    margin-left: 1px;
+}
