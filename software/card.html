@@ -35,6 +35,34 @@
 
     gtag('config', 'G-EXL7ZHTM3N');
     </script>
+
+<script>
+
+    function changeddl(obj) {
+
+        var text = obj.options[obj.selectedIndex].text;
+        var ddl2 = document.querySelectorAll('#confirmcard option');
+        for (var i = 1; i < ddl2.length; i++) {
+            var option = ddl2[i];
+            option.style.display = 'none';
+            if (text == 'Temporary Card') {
+                if (['Temporary Card'].indexOf(option.text) > -1)
+                    option.style.display = 'block'
+
+            }
+            if (text == 'Permanent Card') {
+                if (['Permanent Card'].indexOf(option.text) > -1)
+                    option.style.display = 'block'
+            }
+            if (text == 'Elite Card') {
+                if (['Elite Card'].indexOf(option.text) > -1)
+                    option.style.display = 'block'
+            }
+        }
+    }
+
+</script> 
+
 </head>
 
 <body>
@@ -169,13 +197,20 @@
 									<div class="fieldsets row">
                                         <div class="col-md-6" title="Company Proof"><input type="file" name="company-proof" required multiple>
                                         </div>
-                                        <div class="col-md-6"><select name="card" id="card" required>
+                                        <div class="col-md-6"><select name="card" id="card" onchange="changeddl(this)" required>
 											    <option value="" selected disabled hidden>Select Your Card Type*</option>
 												<option value="Temporary Card" id="Temporary Card">Temporary Card</option>
                                                 <option value="Permanent Card" id="Permanent Card">Permanent Card</option>
                                                 <option value="Elite Card" id="Elite Card">Elite Card</option>
 											</select>
                                         </div>
+                                        <div class="col-md-6"><select name="confirmcard" id="confirmcard" required>
+                                            <option value="" selected disabled hidden>Please Confirm Your Card Type*</option>
+                                            <option value="temporary-card" id="temporary-card">Temporary Card</option>
+                                            <option value="permanent-card" id="permanent-card">Permanent Card</option>
+                                            <option value="elite-card" id="elite-card">Elite Card</option>
+                                        </select>
+                                    </div>
 									</div>
 									<div class="fieldsets mt20"> <button type="submit" name="submit"
 											class="ree-btn  ree-btn-grdt1 w-100" title="Send">Send <i
